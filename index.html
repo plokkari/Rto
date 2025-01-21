@@ -95,9 +95,21 @@
     <!-- Main Content -->
     <div class="container mx-auto px-4 pt-24 pb-40">
         <!-- GIF Box -->
-        <div class="w-full h-64 bg-purple-800 rounded-lg mb-12 flex items-center justify-center">
-            <img src="mynd/rto.gif" alt="Your GIF" class="h-full w-full object-contain"/>
-        </div>
+        <style>
+    .full-screen-gif {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+</style>
+
+<div class="full-screen-gif">
+    <img src="mynd/rto.gif" alt="Your GIF" class="full-screen-gif"/>
+</div>
 
         <!-- Roadmap -->
         <div class="bg-purple-800 rounded-lg p-6 mb-12">
