@@ -5,61 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$RTO</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .banner-scroll {
-            display: flex;
-            width: fit-content;
-            animation: scroll 20s linear infinite;
-        }
+ <style>
+    .banner-scroll {
+        display: flex;
+        width: fit-content;
+        animation: scroll 20s linear infinite;
+    }
 
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
         }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
 
-        .glow {
-            text-shadow: 0 0 10px #2dd4bf;
-        }
+    .glow {
+        text-shadow: 0 0 10px #2dd4bf;
+    }
 
-        .banner-container {
-            width: 100%;
-            overflow: hidden;
-            background: rgb(88, 28, 135);
-            position: fixed;
-            z-index: 50;
-        }
+    .banner-container {
+        width: 100vw; /* Viewport width */
+        margin: 0; /* Ensure no margin causing cut off */
+        padding: 0; /* Ensure no padding causing cut off */
+        overflow: hidden;
+        background: rgb(88, 28, 135);
+        position: fixed;
+        z-index: 50;
+    }
 
-        .banner-container.top {
-            top: 0;
-        }
+    .banner-container.top {
+        top: 0;
+    }
 
-        .banner-container.bottom {
-            bottom: 0;
-        }
+    .banner-container.bottom {
+        bottom: 0;
+    }
 
-        .banner-content {
-            display: flex;
-            padding: 0.75rem 0;
-        }
+    .banner-content {
+        display: flex;
+        padding: 0.75rem 0;
+    }
 
-        .token-symbol {
-            margin: 0 2rem;
-            color: rgb(34, 211, 238);
-            font-weight: bold;
-            font-size: 1.25rem;
-        }
+    .token-symbol {
+        margin: 0 2rem;
+        color: rgb(34, 211, 238);
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
 
-        .background-images {
-            background-image: url('mynd/bol.png'), url('mynd/hat.png');
-            background-position: top left, bottom right;
-            background-repeat: no-repeat, no-repeat;
-            background-size: contain, contain;
-        }
-    </style>
+    .background-images {
+        background-image: url('mynd/bol.png'), url('mynd/hat.png');
+        background-position: top left, bottom right;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain, contain;
+    }
+</style>
 </head>
 <body class="bg-purple-900 text-white min-h-screen relative overflow-x-hidden">
     <!-- Top Banner -->
