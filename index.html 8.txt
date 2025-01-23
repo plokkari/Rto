@@ -119,6 +119,12 @@ a:focus {
 </style>
 </head>
 <body class="bg-purple-900 text-white min-h-screen relative overflow-x-hidden">
+
+<!-- Loading Screen -->
+<div class="loading-screen">
+    <img src="mynd/rto.gif" alt="Loading..." class="loading-gif">
+</div>
+
     <!-- Top Banner -->
     <div class="banner-container top">
         <div class="banner-scroll">
@@ -240,5 +246,18 @@ a:focus {
         <img src="mynd/pump.png" alt="PF" class="social-icon">
     </a>
 </div>
+<script>
+
+// Hide loading screen after 5 seconds
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            const loadingScreen = document.querySelector('.loading-screen');
+            loadingScreen.classList.add('fade-out');
+            setTimeout(() => {
+                loadingScreen.style.display = 'none';
+            }, 500);
+        }, 5000);
+    });
+</script>
 </body>
 </html>
