@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVYEVHMSYC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BVYEVHMSYC');
+</script>
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$RTO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+a:focus {
+    outline: none;
+}
+  <style>
+    .banner-scroll {
+        display: flex;
+        width: fit-content;
+        animation: scroll 20s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .glow {
+        text-shadow: 0 0 10px #2dd4bf;
+    }
+
+    .banner-container {
+        width: 100vw; /* Viewport width */
+        margin: 0; /* Ensure no margin causing cut off */
+        padding: 0; /* Ensure no padding causing cut off */
+        overflow: hidden;
+        background: rgb(88, 28, 135);
+        position: fixed;
+        z-index: 50;
+    }
+
+    .banner-container.top {
+        top: 0;
+    }
+
+    .banner-container.bottom {
+        bottom: 0;
+    }
+
+    .banner-content {
+        display: flex;
+        padding: 0.75rem 0;
+    }
+
+    .token-symbol {
+        margin: 0 2rem;
+        color: rgb(34, 211, 238);
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+
+    .background-images {
+    position: relative;
+    z-index: 1;
+}
+
+.background-images::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('mynd/bol.png'), url('mynd/hat.png');
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    opacity: 0.8; /* Adjust the opacity value as needed */
+    z-index: -1;
+}
+     .social-icon {
+    width: 100px; /* 2x of 6px */
+    height: 100px; /* 2x of 6px */
+    object-fit: cover;
+}
+</style>
+</head>
+<body class="bg-purple-900 text-white min-h-screen relative overflow-x-hidden">
+    <!-- Top Banner -->
+    <div class="banner-container top">
+        <div class="banner-scroll">
+            <div class="banner-content">
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+            </div>
+            <div class="banner-content">
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 pt-24 pb-40">
+        <!-- GIF Box -->
+   <div class="w-full h-64 bg-purple-800 rounded-lg mb-12 flex items-center justify-center">
+            <img src="mynd/rto.gif" alt="Your GIF" class="h-full w-full object-contain"/>
+        </div>
+
+        <!-- Roadmap -->
+        <div class="bg-purple-800 rounded-lg p-6 mb-12">
+            <h2 class="text-3xl font-bold mb-6">Roadmap</h2>
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <div class="bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center mr-4">1</div>
+                    <p class="pt-1">Make some art and start building a loyal community</p>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center mr-4">2</div>
+                    <p class="pt-1">Launch the token show what the Reddit community is made of</p>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center mr-4">3</div>
+                    <p class="pt-1">Keep on making content and spreading the word and next we crack open a cold one on the moon!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CA Box -->
+        <button 
+            onclick="this.textContent='Copied!'; setTimeout(() => this.textContent='CA: Coming Soon!', 2000)"
+            class="w-full bg-purple-800 rounded-lg p-4 text-center mb-12 hover:bg-purple-700 transition-colors">
+            CA: Coming Soon!
+        </button>
+
+        <!-- About Box -->
+        <div class="relative bg-purple-800 rounded-lg p-6 mb-12 background-images">
+            <h2 class="text-3xl font-bold mb-4">About $RTO</h2>
+            <p class="relative z-10">
+                I want to make a token that shows the true power of Reddit, my idea is that the dev wallet will be decided with votes if we should use it to buy Dex, boosts, ads or even giveaways.
+            </p>
+        </div>
+
+      <div class="w-full h-96 bg-purple-800 rounded-lg mb-24 flex items-center justify-center">
+    <img src="mynd/stor.png" alt="Large Image" class="h-full w-full object-contain"/>
+</div>
+
+    <!-- Bottom Banner -->
+    <div class="banner-container bottom">
+        <div class="banner-scroll">
+            <div class="banner-content">
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+            </div>
+            <div class="banner-content">
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+                <span class="token-symbol glow">$RTO</span>
+            </div>
+        </div>
+    </div>
+
+   <!-- Social Links -->
+<!-- Social Links -->
+<div class="fixed bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-4 z-50">
+    <a href="https://reddit.com" target="_blank" rel="noopener noreferrer">
+        <img src="mynd/reddit.png" alt="Reddit" class="social-icon">
+    </a>
+    <a href="https://x.com/reddittakeover?s=21" target="_blank" rel="noopener noreferrer">
+        <img src="mynd/x.png" alt="Twitter" class="social-icon">
+    </a>
+    <a href="https://t.me/reddittakeover" target="_blank" rel="noopener noreferrer">
+        <img src="mynd/tele.png" alt="Telegram" class="social-icon">
+    </a>
+    <a href="#" >
+        <img src="mynd/pump.png" alt="PF" class="social-icon">
+    </a>
+</div>
+</body>
+</html>
