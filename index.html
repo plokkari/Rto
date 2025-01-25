@@ -187,29 +187,7 @@ a:focus {
             class="w-full bg-purple-800 rounded-lg p-4 text-center mb-12 hover:bg-purple-700 transition-colors">
             CA: Coming Soon!
         </button>
-export default function MoonshotContent() {
-  return (
-    <div className="relative mx-auto max-w-2xl px-4 py-8 text-white">
-      <h2 className="text-2xl font-bold text-center mb-6">Launching on Moonshot!</h2>
-      <p className="mb-4">1. I'm using moonshot to launch so there will be no pre sale and no insiders, a fair chance to buy $RTO</p>
-      <p className="mb-4">2. Supply will be 1 billion $RTO tokens</p>
-      <p className="mb-4">3. Moonshot is my choice so I can choose Meteora</p>
-      <p className="mb-4">4. Top 50 $RTO holders receive daily rewards, when we migrate to Meteora</p>
-      <p className="mb-4">5. So stay in top 50 to earn free rewards it pays to stay loyal!</p>
-      
-      <img 
-        src="/api/placeholder/80/80"
-        alt="Top Left Mascot"
-        className="absolute -left-8 -top-8 w-20 h-20 object-contain"
-      />
-      <img 
-        src="/api/placeholder/80/80"
-        alt="Bottom Right Mascot"
-        className="absolute -right-8 -bottom-8 w-20 h-20 object-contain"
-      />
-    </div>
-  );
-}
+
         <!-- About Box -->
         <div class="relative bg-purple-800 rounded-lg p-6 mb-12 background-images">
             <h2 class="text-3xl font-bold mb-4">About $RTO</h2>
@@ -217,6 +195,34 @@ export default function MoonshotContent() {
                 I want to make a token that shows the true power of Reddit, my idea is that the dev wallet will be decided with votes if we should use it to buy Dex, boosts, ads or even giveaways.
             </p>
         </div>
+
+      export default function MoonshotContent() {
+  return (
+    <div className="relative mx-auto max-w-2xl px-4 py-8">
+      <div className="bg-purple-800 rounded-lg p-8 relative">
+        <h2 className="text-2xl font-bold text-center mb-6 text-white">Launching on Moonshot!</h2>
+        <div className="space-y-4 text-white">
+          <p>1. I'm using moonshot to launch so there will be no pre sale and no insiders, a fair chance to buy $RTO</p>
+          <p>2. Supply will be 1 billion $RTO tokens</p>
+          <p>3. Moonshot is my choice so I can choose Meteora</p>
+          <p>4. Top 50 $RTO holders receive daily rewards, when we migrate to Meteora</p>
+          <p>5. So stay in top 50 to earn free rewards it pays to stay loyal!</p>
+        </div>
+        
+        <img 
+          src="/api/placeholder/80/80"
+          alt="Top Left Mascot"
+          className="absolute -left-8 -top-8 w-20 h-20 object-contain"
+        />
+        <img 
+          src="/api/placeholder/80/80"
+          alt="Bottom Right Mascot"
+          className="absolute -right-8 -bottom-8 w-20 h-20 object-contain"
+        />
+      </div>
+    </div>
+  );
+}
 
       <div class="w-full h-96 bg-purple-800 rounded-lg mb-24 flex items-center justify-center">
     <img src="mynd/stor.png" alt="Large Image" class="h-full w-full object-contain"/>
