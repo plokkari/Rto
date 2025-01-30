@@ -258,7 +258,7 @@
   <script type="text/babel">
     const { useState, useEffect } = React;
 
-    const CountdownTimer = () => {
+    const CountdownPreview = () => {
       const [timeLeft, setTimeLeft] = useState({
         days: 0,
         hours: 0,
@@ -289,34 +289,53 @@
         return () => clearInterval(timer);
       }, []);
 
-      const TimeUnit = ({ value, label }) => (
-        <div className="flex flex-col items-center p-4">
-          <div className="text-4xl font-bold text-cyan-400 glow mb-2">
-            {String(value).padStart(2, '0')}
-          </div>
-          <div className="text-sm text-purple-200">{label}</div>
-        </div>
-      );
-
       return (
-        <div className="bg-purple-800 rounded-lg p-6 w-full max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8 text-cyan-400 glow">
-            $RTO Launch Countdown
-          </h2>
-          <div className="flex justify-center items-center space-x-4">
-            <TimeUnit value={timeLeft.days} label="DAYS" />
-            <div className="text-4xl font-bold text-cyan-400 glow">:</div>
-            <TimeUnit value={timeLeft.hours} label="HOURS" />
-            <div className="text-4xl font-bold text-cyan-400 glow">:</div>
-            <TimeUnit value={timeLeft.minutes} label="MINUTES" />
-            <div className="text-4xl font-bold text-cyan-400 glow">:</div>
-            <TimeUnit value={timeLeft.seconds} label="SECONDS" />
+        <div className="bg-purple-900 p-8">
+          {/* GIF Box */}
+          <div className="w-full h-64 bg-purple-800 rounded-lg mb-12 flex items-center justify-center">
+            <div className="text-cyan-400 text-xl">[Your RTO GIF here]</div>
+          </div>
+
+          {/* Countdown Timer */}
+          <div className="bg-purple-800 rounded-lg p-6 mb-12 w-full max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-8 text-cyan-400" style={{ textShadow: '0 0 10px #22d3ee' }}>
+              $RTO Launch Countdown
+            </h2>
+            <div className="flex justify-center items-center space-x-4">
+              <div className="flex flex-col items-center p-4">
+                <div className="text-4xl font-bold text-cyan-400 mb-2" style={{ textShadow: '0 0 10px #22d3ee' }}>
+                  {String(timeLeft.days).padStart(2, '0')}
+                </div>
+                <div className="text-sm text-purple-200">DAYS</div>
+              </div>
+              <div className="text-4xl font-bold text-cyan-400" style={{ textShadow: '0 0 10px #22d3ee' }}>:</div>
+              <div className="flex flex-col items-center p-4">
+                <div className="text-4xl font-bold text-cyan-400 mb-2" style={{ textShadow: '0 0 10px #22d3ee' }}>
+                  {String(timeLeft.hours).padStart(2, '0')}
+                </div>
+                <div className="text-sm text-purple-200">HOURS</div>
+              </div>
+              <div className="text-4xl font-bold text-cyan-400" style={{ textShadow: '0 0 10px #22d3ee' }}>:</div>
+              <div className="flex flex-col items-center p-4">
+                <div className="text-4xl font-bold text-cyan-400 mb-2" style={{ textShadow: '0 0 10px #22d3ee' }}>
+                  {String(timeLeft.minutes).padStart(2, '0')}
+                </div>
+                <div className="text-sm text-purple-200">MINUTES</div>
+              </div>
+              <div className="text-4xl font-bold text-cyan-400" style={{ textShadow: '0 0 10px #22d3ee' }}>:</div>
+              <div className="flex flex-col items-center p-4">
+                <div className="text-4xl font-bold text-cyan-400 mb-2" style={{ textShadow: '0 0 10px #22d3ee' }}>
+                  {String(timeLeft.seconds).padStart(2, '0')}
+                </div>
+                <div className="text-sm text-purple-200">SECONDS</div>
+              </div>
+            </div>
           </div>
         </div>
       );
     };
 
-    ReactDOM.render(<CountdownTimer />, document.getElementById('countdown-timer'));
+    ReactDOM.render(<CountdownPreview />, document.getElementById('countdown-timer'));
   </script>
   <script>
     // Hide loading screen after 5 seconds
