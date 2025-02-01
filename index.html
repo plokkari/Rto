@@ -182,11 +182,12 @@ a:focus {
         </div>
 
         <!-- CA Box -->
-        <button 
-            onclick="this.textContent='Copied!'; setTimeout(() => this.textContent='CA: Click here!', 2000)"
-            class="w-full bg-purple-800 rounded-lg p-4 text-center mb-12 hover:bg-purple-700 transition-colors">
-            7z3xocC4AUgQF2e2iwhLjZjbsj3wrb54BuDJn9xBmoon
-        </button>
+        <!-- CA Box -->
+<button 
+    onclick="navigator.clipboard.writeText('7z3xocC4AUgQF2e2iwhLjZjbsj3wrb54BuDJn9xBmoon').then(() => { this.textContent='Copied!'; setTimeout(() => this.textContent='Click here!', 2000); })"
+    class="w-full bg-purple-800 rounded-lg p-4 text-center mb-12 hover:bg-purple-700 transition-colors">
+    CA: Click here!
+</button>
 
         <!-- About Box -->
         <div class="relative bg-purple-800 rounded-lg p-6 mb-12 background-images">
